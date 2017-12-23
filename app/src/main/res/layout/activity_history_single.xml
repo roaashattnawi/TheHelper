@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hs"
+    tools:context="com.example.naser.thehelper.HistorySingleActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:id="@+id/map"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/round"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_margin="10sp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="المكان : "
+            android:layout_marginBottom="20sp"
+            android:id="@+id/workLoaction"
+            android:layout_gravity="right"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="عدد الساعات : "
+            android:layout_gravity="right"
+            android:layout_marginBottom="20sp"
+            android:id="@+id/workTime"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="هل كنت بحاجه اداوت تنظيف؟ : "
+            android:layout_marginBottom="20sp"
+            android:layout_gravity="right"
+            android:id="@+id/workTools"/>
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="التاريخ : "
+            android:layout_gravity="right"
+        android:layout_marginBottom="20sp"
+            android:id="@+id/workDate"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اسم العامله : "
+            android:layout_marginBottom="20sp"
+            android:layout_gravity="right"
+            android:id="@+id/userName"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="رقم الهاتف"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20sp"
+            android:id="@+id/userPhone"/>
+    </LinearLayout>
+    </LinearLayout>
+
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:stepSize="1"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pay"
+        android:text="للدفع اضغط هنا"
+        android:visibility="visible"
+        android:enabled="true"/>
+    </LinearLayout>
+
+
+
+
+</android.support.v4.widget.NestedScrollView>

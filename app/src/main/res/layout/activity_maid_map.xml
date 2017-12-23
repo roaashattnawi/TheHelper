@@ -1,0 +1,116 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.naser.thehelper.MaidMapActivity" >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/logout"
+                android:text="تسجيل خروج"/>
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/settings"
+                android:text="الإعدادات"
+                android:layout_gravity="end" />
+
+        </LinearLayout>
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="متاحه"
+            android:layout_gravity="right"
+            android:layout_margin="10sp"
+            android:id="@+id/workingSwitch"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/customerInfo"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@drawable/round">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/CustomerToolNeeded"
+                    android:paddingBottom="10dp"
+                    android:textSize="20dp"
+                    android:layout_gravity="right"
+                    android:text="هل يحتاج الزبون ادوات تنظيف؟ :--"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/CustomerTimeNeeded"
+                    android:paddingBottom="10dp"
+                    android:textSize="20dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:text="عدد الساعات التي يحتاجها الزبون :--"/>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CustomerName"
+            android:paddingBottom="10dp"
+                android:textSize="30dp"
+            android:paddingTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/CustomerPhone"
+                android:textSize="30sp"
+                android:paddingBottom="10dp"
+                android:paddingTop="20dp"/>
+
+        </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="وصلت إلى منزل الزبون"
+            android:id="@+id/workStatus"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="انهيت العمل"
+            android:id="@+id/doneWork"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</FrameLayout>
+
